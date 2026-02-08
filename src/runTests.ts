@@ -1,4 +1,4 @@
-//import newman from 'newman';
+// src/runTests.ts
 const newman = require('newman');
 
 newman.run(

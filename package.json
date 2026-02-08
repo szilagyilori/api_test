@@ -7,7 +7,9 @@
         "test": "ts-node src/runTests.ts"
     },
     "devDependencies": {
-        "@types/node": "^25.2.2",
+        "@types/node": "^25.2.2"
+    },
+    "dependencies": {
         "newman": "^6.2.2"
     }
 }
