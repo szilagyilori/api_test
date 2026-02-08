@@ -4,7 +4,7 @@
     "description": "API test project JSONPlaceholder Postman + Newman + GitHub Actions",
     "scripts": {
         "build": "tsc",
-        "test": "ts-node src/runTests.ts"
+        "test": "npx ts-node src/runTests.ts"
     },
     "devDependencies": {
         "@types/node": "^25.2.2"

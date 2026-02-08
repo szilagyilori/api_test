@@ -1,4 +1,4 @@
-name: Run Postman Tests (TypeScript)
+name: Run Newman TypeScript Tests
 
 on:
   push:
@@ -9,6 +9,7 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repo
         uses: actions/checkout@v3
@@ -19,7 +20,7 @@ jobs:
           node-version: '20'
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
       - name: Run Newman TypeScript script
         run: npm test
