@@ -1,0 +1,77 @@
+{
+    "info": {
+        "name": "JSONPlaceholder API Tests",
+        "_postman_id": "12345678-abcd-efgh-ijkl-9876543210ab",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "GET all posts",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "https://jsonplaceholder.typicode.com/posts",
+                    "protocol": "https",
+                    "host": [
+                        "jsonplaceholder",
+                        "typicode",
+                        "com"
+                    ],
+                    "path": [
+                        "posts"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "GET single post",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "https://jsonplaceholder.typicode.com/posts/1",
+                    "protocol": "https",
+                    "host": [
+                        "jsonplaceholder",
+                        "typicode",
+                        "com"
+                    ],
+                    "path": [
+                        "posts",
+                        "1"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "POST create post",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\"title\":\"foo\",\"body\":\"bar\",\"userId\":1}"
+                },
+                "url": {
+                    "raw": "https://jsonplaceholder.typicode.com/posts",
+                    "protocol": "https",
+                    "host": [
+                        "jsonplaceholder",
+                        "typicode",
+                        "com"
+                    ],
+                    "path": [
+                        "posts"
+                    ]
+                }
+            },
+            "response": []
+        }
+    ]
+}
